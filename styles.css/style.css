@@ -1,5 +1,64 @@
+/* font style import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+/* common font style for body  */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+}
 /* style top players */
+.section-title{
+    color: #562EFF;
+    margin-top: 3px;
+}
+.top-players{
+    margin-bottom: 30px;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.hr{
+    border: 1px solid #D1D1D1;
+}
+.thumbnell img{
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+.article{
+    display: flex;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
 }

@@ -116,3 +116,63 @@ font-size: 12px;
     font-size: 15px;
     margin-left: 25px;
 }
+/*----------------- 
+responsive
+------------------- */
+/* for max 688px mobile phone */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    /* top players
+    ---------------- */
+   .section-title{
+       display: flex;
+       justify-content: center;
+   }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    /* top blogs 
+    ------------ */
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .article{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* courses section 
+    ------------------ */
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    
+}
+/*-------------
+responsive end for max 688px mobile phone 
+---------------------------------------------- */
+
+/* Tablet devices 688px to 992px 
+-------------------------------- */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;  
+    }
+    .section-title{
+        display: flex;
+        justify-content: center;
+      
+    }
+    .players,.blogs, .courses{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;   
+    }
+}
+/* responsive for Tab done 
+----------------------------*/
